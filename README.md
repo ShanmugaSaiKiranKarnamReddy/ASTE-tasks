@@ -63,5 +63,5 @@ Aspect Sentiment Triplet Extraction is a mechanism of extracting sentiment in th
 ```
 ngrok authtoken token id
 ```
-## Visualization of Sentiment Triplets Using a Publicly Exposed API
+## Visualization of Sentiment Triplets for Wine Data Using a Publicly Exposed API
 ![image](https://github.com/ShanmugaSaiKiranKarnamReddy/ASTE-tasks/blob/master/Screenshot%20(157).png)
