@@ -1,1 +1,2 @@
-# ASTE-tasks
+# Sentiment Triplet Extraction Tasks
+
