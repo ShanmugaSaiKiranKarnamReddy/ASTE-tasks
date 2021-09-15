@@ -44,7 +44,7 @@ Aspect Sentiment Triplet Extraction is a mechanism of extracting sentiment in th
 ```
 * Triplet Extraction Task
 ```
-    python main.py -- Model model name --task triplet --mode train --dataset dataset name
+    python main.py -- Model model name --task triplet --mode test --dataset dataset name
 ```
 ## Predicting the Sentiment Triplets
 ```
