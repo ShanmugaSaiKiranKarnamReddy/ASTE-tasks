@@ -15,10 +15,42 @@ Aspect Sentiment Triplet Extraction is a mechanism of extracting sentiment in th
 * transformers==4.10.2
 # Pre-trained and saved models of all Transformer Neural Networks
 ## Pre-trained Transformer Models
-
+**Note**: All the pre-trained models implemented for this mechanism can be downloaded from below shared links
 * [Albert](https://drive.google.com/drive/folders/1f_vjy4g0WnFS1_5k0gojvCRQvmLC018e?usp=sharing)
 * [Bert](https://drive.google.com/drive/folders/1XFd6dUwKyOcE9tR9yGh3ynaX809UZA2t?usp=sharing)
+* [Distil_bert](https://drive.google.com/drive/folders/1rSHNn9ABy356cq3UZe3kTQBW3WzBhB4U?usp=sharing)
 * [Roberta](https://drive.google.com/drive/folders/1-WrFAmUM368OKq1LUNzHzUSyKwaESF5B?usp=sharing)
 * [Xlnet](https://drive.google.com/drive/folders/1whKsduaaHxCZxGYXfbpO97jN2rDGQvx3?usp=sharing)
-
-
+## Saved Models fine tuned for chosen datasets
+**Note**: All the saved models implemented and fine tuned for both pair extraction and triplet extraction in this mechanism can be downloaded from below shared links
+* [Albert](https://drive.google.com/drive/folders/1HJPrLCWHsoupoRKtDh23W0C-DMepSohq?usp=sharing)
+* [Bert](https://drive.google.com/drive/folders/1-drrVBZFMKHdEnXtQ54n_eYQOxW17Mvn?usp=sharing)
+* [Distil-Bert](https://drive.google.com/drive/folders/1-DTyyPm5SNZWc6rSRhMycLyLQHTqYSFA?usp=sharing)
+* [Roberta](https://drive.google.com/drive/folders/1-_CoRNGbM75O2aoGgsHqLED3fV8KLi6C?usp=sharing)
+* [Xlnet](https://drive.google.com/drive/folders/1ld0p9z4qJNou8Nsa6mCzEw8Ij99WanaG?usp=sharing)
+## Training the transformer models
+* Pair Extraction Task
+```
+    python main.py -- Model model name --task pair --mode train --dataset dataset name
+```
+* Triplet Extraction Task
+```
+    python main.py -- Model model name --task triplet --mode train --dataset dataset name
+```
+## Testing the transformer models
+* Pair Extraction Task
+```
+    python main.py -- Model model name --task pair --mode test --dataset dataset name
+```
+* Triplet Extraction Task
+```
+    python main.py -- Model model name --task triplet --mode train --dataset dataset name
+```
+## Predicting the Sentiment Triplets
+```
+    python main.py -- Model model name --task triplets --mode predict --dataset dataset name
+```
+## Visualizing the Sentiment Triplets
+```
+    python app.py -- Model model name --task pair --mode predict --dataset dataset name
+```
