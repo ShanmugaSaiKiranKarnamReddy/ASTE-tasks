@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<style>
+	body{
+			background-image: url("{{ url_for('static', filename='3.jpg') }}"); 
+      background-attachment: fixed;
+      background-size: 100% auto;
+      background-position: center;
+		}
+	</style>
+
+<body>
+	<header>
+		<div class="container">
+			<div id="brandname" style="font-size:xx-large;font-family: Trebuchet MS;text-align: center;color: #fffdd0;">
+				<u>Sentiment Analysis Application</u>
+			</div>
+		<h2 style="text-align: center;font-family: Trebuchet MS;color: #fffdd0;"><u>Aspect Sentiment Triplet Extraction from Text</u></h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="{{ url_for('predict1')}}" method="POST">
+		<p style="font-size: large;text-align: center;font-family: Trebuchet MS;color:Gold;">Enter Your Text Here !!!</p>
+		<!-- <input type="text" name="comment"/> -->
+		<style>
+			div.justified {
+				display: flex;
+				justify-content: center;
+			}
+		</style>
+		
+		<div class="justified">
+			<textarea name="message" rows="5" cols="70" style="background-color: oldlace;"></textarea>
+		</div>
+		<br/>
+	
+		<input type="submit" class="search" value="Predict" style="margin:0px auto; display:block;background-color:wheat;font-size: medium;font-family: Sans-Serif">
+		
+			
+		
+		
+	</form>
+		
+	</div>
+</body>
+</html>

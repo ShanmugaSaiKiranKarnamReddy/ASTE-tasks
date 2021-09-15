@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<style>
+	body{
+			background-image: url("{{ url_for('static', filename='3.jpg') }}"); 
+      background-attachment: fixed;
+      background-size: 100% auto;
+      background-position: center;
+		}
+	</style>
+<body>
+	<header>
+		<div class="container">
+		<div id="brandname" style="font-size: x-large;font-family: Sans-Serif;text-align: center;color: white;">
+		</div>
+		<h2 style="text-align: center;font-family: Trebuchet MS;color: #fffdd0;"><u>NLP Model Pipeline Results for Aspect Sentiment Triplet Extraction </u></h2>
+		
+	</div>
+	</header>
+	<div class="results">
+
+		
+		
+	</div>
+	<style>
+		.center {
+		  margin:initial;
+		  width: 100%;
+		  border: 2px solid steelblue;
+		  padding: 0px;
+		  margin: 10px; 
+		}
+		</style>
+	<div style="text-align:center">
+		<div class="center" style="text-align: center;background-color:linen;">
+			<p style="color:teal;font-size:x-large;text-align: center;">{{ prediction }}</p>
+			</div>
+
+	<a href="{{ url_for('home')}}" type="button" class="btn btn-danger" style="font-family: Trebuchet MS;color: Gold;font-size: x-large;"> HomePage</a>
+	</div>
+	
+</body>
+</html>
