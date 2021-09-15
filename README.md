@@ -54,7 +54,7 @@ Aspect Sentiment Triplet Extraction is a mechanism of extracting sentiment in th
 ```
     python app.py -- Model model name --task triplet --mode predict --dataset dataset name
 ```
-## Install Ngrok for Flask Web-App
+## Install Ngrok for Local Web-App
 ```
 !pip install flask_ngrok
 ```
